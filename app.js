@@ -13,7 +13,6 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index");
 
 mongoose.connect(process.env.DATABASEURL);
-//mongoose.connect("mongodb://luc:football66@ds147304.mlab.com:47304/yelpcamp");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
